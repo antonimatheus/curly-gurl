@@ -19,8 +19,8 @@ body {
   height: 100svh;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(12, 12, 12);
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
-    url(imgs/wallpaper.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url(imgs/img1.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -62,7 +62,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 65%;
+  width: 70%;
   text-align: center;
   color: var(--whitesmoke);
 }
@@ -168,11 +168,12 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 18px;
+  padding: 20px;
   border: 2px solid var(--whitesmoke);
   border-radius: 15px;
   color: var(--whitesmoke);
   background-color: var(--rose);
+  box-shadow: 0px 0px 15px var(--rose);
   gap: 10px;
   transition: 0.4s;
 }
