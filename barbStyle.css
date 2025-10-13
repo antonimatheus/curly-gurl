@@ -1,0 +1,203 @@
+:root {
+  --rose: #fcaebe;
+  --whitesmoke: #f5f5f5;
+  --gray: #737373;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100svh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(12, 12, 12);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+    url(imgs/wallpaper.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 5%;
+}
+
+#social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  color: var(--whitesmoke);
+  transition: 0.4s;
+}
+
+#social img {
+  width: 35px;
+}
+
+#social a:hover {
+  color: var(--whitesmoke);
+  text-decoration: underline;
+}
+
+#title {
+  font-family: "young serif", serif;
+}
+
+#title h1 {
+  text-align: center;
+  font-size: 70px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  color: var(--rose);
+}
+
+#text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  text-align: center;
+  color: var(--whitesmoke);
+}
+
+#text p {
+  font-size: 20px;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+#imgsBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+
+#cliqueParaDesbloquear a {
+  color: var(--gray);
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 10px;
+}
+
+#imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 250px;
+  overflow: hidden;
+  position: relative;
+  gap: 3vw;
+}
+
+.imgs--div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 5px;
+}
+
+.foto-container {
+  position: relative;
+  width: 30vw;
+  max-height: 250px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.modelo {
+  width: 100%; /* Preenche toda a largura do contêiner */
+  height: 100%; /* Preenche toda a altura do contêiner */
+  object-fit: cover; /* Garante que a imagem preencha proporcionalmente o espaço */
+  object-position: center; /* Centraliza o foco no meio da imagem */
+  border-radius: 10px;
+  filter: blur(3.5px);
+}
+
+.cadeado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px; /* Ajusta o tamanho do cadeado conforme necessário */
+  z-index: 2;
+  pointer-events: none; /* O clique não afeta o cadeado, apenas o link da imagem */
+}
+
+.star--active {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 3px;
+}
+
+.star--active i {
+  font-size: 12px;
+  color: yellow;
+}
+
+#buttonCTA {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#buttonCTA a {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 18px;
+  border: 2px solid var(--whitesmoke);
+  border-radius: 15px;
+  color: var(--whitesmoke);
+  background-color: var(--rose);
+  gap: 10px;
+  transition: 0.4s;
+}
+
+#buttonCTA > a > i {
+  position: relative;
+  animation: arrowmove infinite alternate 0.4s;
+}
+
+#buttonCTA a:hover {
+  border-radius: 13px;
+  border-color: var(--gray);
+}
+
+#buttonCTA #aviso {
+  font-size: 10px;
+  color: var(--rose);
+}
+
+@keyframes arrowmove {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left: 4px;
+  }
+}
